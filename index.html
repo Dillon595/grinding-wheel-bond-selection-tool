@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grinding Wheel Bond Selection Tool | Resin, Vitrified, Metal &amp; Electroplated</title>
+<meta name="description" content="Free grinding wheel bond selection tool for diamond and CBN grinding wheels. Compare resin, vitrified, metal, and electroplated bonds based on workpiece material, grinding operation, and process priorities.">
+<meta name="keywords" content="grinding wheel bond selection, grinding wheel bond selection tool, diamond wheel bond, CBN wheel bond, resin bond grinding wheel, vitrified bond grinding wheel, metal bond grinding wheel, electroplated grinding wheel, superabrasive bond selection">
+<meta name="author" content="SINOGRIND CO., LTD.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sinogrind.com/grindingWheel/bond-selection-tool/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grinding Wheel Bond Selection Tool | Resin, Vitrified, Metal & Electroplated">
+<meta property="og:description" content="Free interactive tool to select the right grinding wheel bond for diamond and CBN applications. Compare resin, vitrified, metal, and electroplated bonds.">
+<meta property="og:url" content="https://sinogrind.com/grindingWheel/bond-selection-tool/">
+<meta property="og:site_name" content="SINOGRIND">
+<meta property="og:image" content="https://sinogrind.com/og-bond-selection.jpg">
+
+<!-- Twitter/X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Grinding Wheel Bond Selection Tool | Resin, Vitrified, Metal & Electroplated">
+<meta name="twitter:description" content="Free interactive tool to select the right grinding wheel bond for diamond and CBN applications. Compare resin, vitrified, metal, and electroplated bonds.">
+<meta name="twitter:image" content="https://sinogrind.com/og-bond-selection.jpg">
+
+<!-- Structured Data: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Grinding Wheel Bond Selection Tool",
+  "url": "https://sinogrind.com/grindingWheel/bond-selection-tool/",
+  "description": "Free interactive tool to help engineers and machinists select the right grinding wheel bond for diamond and CBN superabrasive grinding applications.",
+  "applicationCategory": "EngineeringApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "SINOGRIND CO., LTD.",
+    "url": "https://sinogrind.com/"
+  }
+}
+</script>
+
+<!-- Structured Data: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sinogrind.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Grinding Wheels",
+      "item": "https://sinogrind.com/grindingWheel/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bond Selection Tool",
+      "item": "https://sinogrind.com/grindingWheel/bond-selection-tool/"
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SINOGRIND CO., LTD.",
+  "url": "https://sinogrind.com/",
+  "logo": "https://sinogrind.com/logo.png",
+  "description": "Manufacturer of diamond and CBN grinding wheels, resin, vitrified, metal bond, and electroplated superabrasive tools."
+}
+</script>
+
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --clr-bg:#f4f5f7;--clr-surface:#ffffff;--clr-primary:#1a3a5c;--clr-primary-light:#2a5a8c;
+  --clr-accent:#c0392b;--clr-accent-hover:#e74c3c;--clr-text:#2c3e50;--clr-text-light:#5a6c7d;
+  --clr-border:#dde1e6;--clr-success:#27ae60;--clr-warn:#e67e22;--clr-info:#2980b9;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 12px rgba(0,0,0,.1);
+  --shadow-lg:0 8px 24px rgba(0,0,0,.12);--radius:8px;--radius-lg:12px;
+  --font-sans:'Segoe UI',system-ui,-apple-system,sans-serif;--font-mono:'SF Mono',Consolas,monospace;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-sans);background:var(--clr-bg);color:var(--clr-text);line-height:1.6;min-height:100vh}
+a{color:var(--clr-primary-light);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+
+/* ===== LAYOUT ===== */
+.container{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+header{background:var(--clr-primary);color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:var(--shadow-md)}
+header .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+header h1{font-size:1.2rem;font-weight:700;letter-spacing:-.02em}
+header h1 span{color:var(--clr-accent-hover);font-weight:800}
+header nav a{color:rgba(255,255,255,.85);font-size:.85rem;margin-left:1rem}
+header nav a:hover{color:#fff;text-decoration:none}
+
+/* Breadcrumbs */
+.breadcrumbs{background:#fff;border-bottom:1px solid var(--clr-border);padding:.5rem 0;font-size:.82rem}
+.breadcrumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.25rem}
+.breadcrumbs li::after{content:'›';margin-left:.35rem;color:var(--clr-text-light)}
+.breadcrumbs li:last-child::after{content:''}
+.breadcrumbs a{color:var(--clr-primary-light)}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--clr-primary) 0%,#0d2137 100%);color:#fff;padding:3rem 0 2.5rem;text-align:center}
+.hero h1{font-size:2rem;margin-bottom:.75rem}
+.hero p{font-size:1.05rem;opacity:.9;max-width:680px;margin:0 auto}
+
+/* Main grid */
+.main-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;padding:2rem 0}
+@media(max-width:800px){.main-grid{grid-template-columns:1fr}}
+
+/* Cards */
+.card{background:var(--clr-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);overflow:hidden;border:1px solid var(--clr-border)}
+.card-header{background:var(--clr-primary);color:#fff;padding:.85rem 1.25rem;font-size:1rem;font-weight:600;display:flex;align-items:center;gap:.5rem}
+.card-body{padding:1.25rem}
+
+/* Form */
+.form-group{margin-bottom:1.1rem}
+.form-group label{display:block;font-weight:600;font-size:.88rem;margin-bottom:.35rem;color:var(--clr-primary)}
+.form-group .hint{font-size:.78rem;color:var(--clr-text-light);margin-top:.2rem}
+select,input[type="number"]{width:100%;padding:.6rem .8rem;border:1px solid var(--clr-border);border-radius:var(--radius);font-size:.92rem;font-family:var(--font-sans);background:#fff;color:var(--clr-text);transition:border-color .2s}
+select:focus,input:focus{outline:none;border-color:var(--clr-primary-light);box-shadow:0 0 0 3px rgba(42,90,140,.15)}
+select{cursor:pointer;appearance:auto}
+
+/* Radio cards */
+.radio-group{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.5rem}
+.radio-card{position:relative}
+.radio-card input{position:absolute;opacity:0;width:0;height:0}
+.radio-card label{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.65rem .5rem;border:2px solid var(--clr-border);border-radius:var(--radius);cursor:pointer;font-size:.82rem;font-weight:500;text-align:center;transition:all .2s;min-height:60px;background:#fff}
+.radio-card label:hover{border-color:var(--clr-primary-light);background:#f0f6ff}
+.radio-card input:checked+label{border-color:var(--clr-primary);background:rgba(26,58,92,.06);box-shadow:0 0 0 1px var(--clr-primary)}
+.radio-card input:focus-visible+label{box-shadow:0 0 0 3px rgba(42,90,140,.35)}
+
+/* Buttons */
+.btn-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.btn{padding:.6rem 1.3rem;border:none;border-radius:var(--radius);font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:var(--font-sans)}
+.btn:focus-visible{box-shadow:0 0 0 3px rgba(42,90,140,.4)}
+.btn-primary{background:var(--clr-accent);color:#fff}
+.btn-primary:hover{background:var(--clr-accent-hover)}
+.btn-secondary{background:#ecf0f3;color:var(--clr-text)}
+.btn-secondary:hover{background:#dde1e6}
+.btn-success{background:var(--clr-success);color:#fff}
+.btn-success:hover{background:#219a52}
+.btn-info{background:var(--clr-info);color:#fff}
+.btn-info:hover{background:#2471a3}
+.btn-sm{padding:.4rem .9rem;font-size:.8rem}
+
+/* Results panel */
+#results-panel{display:none}
+#results-panel.visible{display:block}
+.result-card{border-left:5px solid var(--clr-accent);background:var(--clr-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:1.5rem;margin-bottom:1.25rem}
+.result-card h2{font-size:1.3rem;color:var(--clr-primary);margin-bottom:.25rem}
+.result-card .bond-badge{display:inline-block;padding:.3rem .85rem;border-radius:20px;font-size:.8rem;font-weight:700;margin-right:.5rem;margin-bottom:.5rem}
+.badge-primary{background:var(--clr-accent);color:#fff}
+.badge-secondary{background:var(--clr-info);color:#fff}
+.result-card p,.result-card li{font-size:.92rem;line-height:1.65}
+.result-card ul{padding-left:1.2rem;margin:.5rem 0}
+.result-card li{margin-bottom:.25rem}
+.scoring-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin:1rem 0}
+.scoring-item{background:#f8f9fa;border-radius:var(--radius);padding:.7rem .9rem;font-size:.84rem;border:1px solid var(--clr-border)}
+.scoring-item .sc-label{color:var(--clr-text-light);font-size:.76rem;text-transform:uppercase;letter-spacing:.03em}
+.scoring-item .sc-bar{height:6px;background:#e8eaed;border-radius:3px;margin-top:.3rem;overflow:hidden}
+.scoring-item .sc-fill{height:100%;border-radius:3px;transition:width .6s ease}
+.scoring-item .sc-value{font-weight:700;font-size:.9rem}
+
+/* Comparison table */
+.comparison-section{margin:2.5rem 0}
+.comparison-section h2{font-size:1.4rem;color:var(--clr-primary);margin-bottom:1rem;text-align:center}
+.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);border:1px solid var(--clr-border)}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+thead{background:var(--clr-primary);color:#fff}
+th{padding:.75rem 1rem;text-align:left;font-weight:600;white-space:nowrap}
+td{padding:.7rem 1rem;border-bottom:1px solid var(--clr-border);vertical-align:top}
+tbody tr:hover{background:#f5f8fc}
+tbody tr:nth-child(even){background:#fafbfc}
+
+/* FAQ / GEO sections */
+.geo-section{margin:3rem 0}
+.geo-section h2{font-size:1.4rem;color:var(--clr-primary);margin-bottom:1.25rem;text-align:center}
+.faq-item{background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--radius-lg);margin-bottom:1rem;overflow:hidden}
+.faq-item h3{font-size:1.05rem;padding:1rem 1.25rem;color:var(--clr-primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-item h3::after{content:'▸';transition:transform .2s;font-size:1.2rem}
+.faq-item.open h3::after{transform:rotate(90deg)}
+.faq-answer{padding:0 1.25rem 1.1rem;display:none;font-size:.92rem;line-height:1.7}
+.faq-item.open .faq-answer{display:block}
+.faq-answer .direct-answer{font-weight:600;color:var(--clr-primary);margin-bottom:.5rem;padding:.65rem .9rem;background:rgba(26,58,92,.04);border-radius:var(--radius);border-left:3px solid var(--clr-primary)}
+
+/* Technical content */
+.tech-section{margin:3rem 0}
+.tech-section h2{font-size:1.3rem;color:var(--clr-primary);margin-bottom:.75rem;margin-top:2rem}
+.tech-section h3{font-size:1.05rem;color:var(--clr-primary-light);margin-bottom:.5rem;margin-top:1.25rem}
+.tech-section p{margin-bottom:.75rem;font-size:.92rem}
+.tech-section ul{padding-left:1.25rem;margin-bottom:.75rem}
+.tech-section li{margin-bottom:.3rem;font-size:.92rem}
+
+/* Disclaimer */
+.disclaimer{background:#fff8e1;border:1px solid #ffe082;border-radius:var(--radius-lg);padding:1.25rem;margin:2rem 0;font-size:.85rem;color:#5d4037}
+.disclaimer strong{color:#bf360c}
+
+/* Footer */
+footer{background:#0d2137;color:rgba(255,255,255,.7);padding:2rem 0;margin-top:3rem}
+footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:.5rem}
+footer a{color:rgba(255,255,255,.8)}
+footer .copy{text-align:center;font-size:.8rem;margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1);grid-column:1/-1}
+
+/* Print */
+@media print{header,nav,.hero,.breadcrumbs,footer,.btn-row,#results-panel .btn-row,.geo-section,.tech-section,.disclaimer{display:none!important}#results-panel{display:block!important}#results-panel.visible{display:block!important}.result-card{break-inside:avoid;box-shadow:none;border:1px solid #ccc}}
+
+/* Responsive */
+@media(max-width:600px){
+  .hero h1{font-size:1.45rem}
+  .radio-group{grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}
+  .scoring-grid{grid-template-columns:1fr}
+  header .container{flex-direction:column;text-align:center}
+  header nav a{margin:.25rem .5rem}
+}
+
+/* Accessibility: skip link */
+.skip-link{position:absolute;top:-100px;left:0;background:var(--clr-accent);color:#fff;padding:.5rem 1rem;z-index:999;font-weight:600}
+.skip-link:focus{top:0}
+
+/* Tooltip */
+.tooltip-trigger{position:relative;display:inline-block;border-bottom:1px dotted var(--clr-text-light);cursor:help}
+.tooltip-trigger::after{content:attr(data-tip);position:absolute;bottom:120%;left:50%;transform:translateX(-50%);background:#1a1a2e;color:#fff;padding:.45rem .7rem;border-radius:6px;font-size:.76rem;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:260px;white-space:normal;text-align:center}
+.tooltip-trigger:hover::after,.tooltip-trigger:focus::after{opacity:1}
+
+/* Animate results */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.animate-in{animation:fadeUp .4s ease forwards}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <h1><span>SINOGRIND</span> Bond Selection Tool</h1>
+    <nav aria-label="Main navigation">
+      <a href="#tool">Tool</a>
+      <a href="#comparison">Comparison</a>
+      <a href="#faq">FAQ</a>
+      <a href="#learn">Learn</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+  <div class="container">
+    <ol>
+      <li><a href="https://sinogrind.com/">Home</a></li>
+      <li><a href="https://sinogrind.com/grindingWheel/">Grinding Wheels</a></li>
+      <li><span aria-current="page">Bond Selection Tool</span></li>
+    </ol>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <h1>Grinding Wheel Bond Selection Tool</h1>
+    <p>Select the optimal bond family for your diamond or CBN grinding application. Compare resin, vitrified, metal, and electroplated bonds based on your specific workpiece and process requirements.</p>
+  </div>
+</section>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main id="main-content">
+<div class="container">
+
+<!-- ===== TOOL SECTION ===== -->
+<section id="tool" aria-label="Bond Selection Tool">
+<div class="main-grid">
+
+<!-- LEFT: Inputs -->
+<div>
+  <div class="card">
+    <div class="card-header">&#9881; Grinding Parameters</div>
+    <div class="card-body">
+      <form id="bond-form" novalidate>
+
+        <!-- Abrasive -->
+        <fieldset class="form-group">
+          <label id="lbl-abrasive">1. Abrasive Type</label>
+          <div class="radio-group" role="radiogroup" aria-labelledby="lbl-abrasive">
+            <div class="radio-card">
+              <input type="radio" name="abrasive" id="abr-diamond" value="diamond" checked>
+              <label for="abr-diamond">Diamond</label>
+            </div>
+            <div class="radio-card">
+              <input type="radio" name="abrasive" id="abr-cbn" value="cbn">
+              <label for="abr-cbn">CBN</label>
+            </div>
+            <div class="radio-card">
+              <input type="radio" name="abrasive" id="abr-unsure" value="unsure">
+              <label for="abr-unsure">Unsure</label>
+            </div>
+          </div>
+          <p class="hint">Diamond for non-ferrous hard materials; CBN for ferrous hardened steels.</p>
+        </fieldset>
+
+        <!-- Workpiece -->
+        <fieldset class="form-group">
+          <label for="workpiece">2. Workpiece Material</label>
+          <select id="workpiece">
+            <option value="tungsten_carbide">Tungsten carbide</option>
+            <option value="ceramic">Ceramic</option>
+            <option value="pcd">PCD (polycrystalline diamond)</option>
+            <option value="pcbn">PCBN</option>
+            <option value="hardened_steel">Hardened steel</option>
+            <option value="tool_steel">Tool steel</option>
+            <option value="bearing_steel">Bearing steel</option>
+            <option value="glass">Glass</option>
+            <option value="ferrite">Ferrite</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <!-- Operation -->
+        <fieldset class="form-group">
+          <label for="operation">3. Grinding Operation</label>
+          <select id="operation">
+            <option value="surface">Surface grinding</option>
+            <option value="cylindrical">Cylindrical grinding</option>
+            <option value="internal">Internal grinding</option>
+            <option value="tool_grinding">Tool grinding</option>
+            <option value="profile">Profile grinding</option>
+            <option value="creep_feed">Creep-feed grinding</option>
+            <option value="sharpening">Sharpening</option>
+          </select>
+        </fieldset>
+
+        <!-- Priority -->
+        <fieldset class="form-group">
+          <label for="priority">4. Primary Priority</label>
+          <select id="priority">
+            <option value="finish">Surface finish</option>
+            <option value="removal">Stock removal rate</option>
+            <option value="life">Wheel life / economy</option>
+            <option value="form">Form holding</option>
+            <option value="balanced">Balanced / general purpose</option>
+          </select>
+        </fieldset>
+
+        <!-- Wheel characteristics -->
+        <fieldset class="form-group">
+          <label for="characteristics">5. Required Wheel Characteristics</label>
+          <select id="characteristics">
+            <option value="fine_finish">Fine surface finish (Ra &lt; 0.2 &micro;m)</option>
+            <option value="general">General purpose / moderate finish</option>
+            <option value="aggressive">Aggressive / high removal</option>
+            <option value="form_hold">Precision form holding</option>
+            <option value="economical">Economy / long life</option>
+          </select>
+        </fieldset>
+
+        <!-- Wet / Dry -->
+        <fieldset class="form-group">
+          <label for="coolant">6. Grinding Condition</label>
+          <select id="coolant">
+            <option value="wet">Wet (with coolant)</option>
+            <option value="dry">Dry (no coolant)</option>
+          </select>
+        </fieldset>
+
+        <!-- Wheel Speed -->
+        <div class="form-group">
+          <label for="speed">7. Wheel Speed (m/s) <span style="font-weight:400;color:var(--clr-text-light)">— optional</span></label>
+          <input type="number" id="speed" min="5" max="125" step="1" placeholder="e.g. 25 — leave blank if unsure">
+          <p class="hint">Typical range: 15–35 m/s for resin bond, 20–60 m/s for vitrified, up to 80+ m/s for metal bond.</p>
+        </div>
+
+        <!-- Dressing -->
+        <div class="form-group">
+          <label for="dressing">8. Dressing Requirements <span style="font-weight:400;color:var(--clr-text-light)">— optional</span></label>
+          <select id="dressing">
+            <option value="none">No preference / not sure</option>
+            <option value="easy_dress">Need easy dressing (diamond dresser)</option>
+            <option value="truing">Need precision truing capability</option>
+            <option value="no_dress">Prefer no dressing needed</option>
+          </select>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary" id="btn-analyze">Analyze &amp; Recommend</button>
+          <button type="reset" class="btn btn-secondary" id="btn-reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- RIGHT: Results -->
+<div id="results-panel" aria-live="polite">
+  <div class="card" id="results-card">
+    <div class="card-header">&#9733; Bond Recommendation</div>
+    <div class="card-body" id="results-body">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+</div>
+
+</div><!-- /main-grid -->
+</section>
+
+<!-- Disclaimer -->
+<div class="disclaimer" role="note">
+  <strong>Disclaimer:</strong> This tool provides preliminary guidance for grinding wheel bond selection based on general engineering knowledge. Actual bond selection must be validated against the specific grinding machine capability, workpiece hardness and geometry, wheel speed, coolant type and flow rate, dressing method, and all grinding process parameters. Consult <a href="https://sinogrind.com/grindingWheel/">SINOGRIND technical support</a> for application-specific recommendations.
+</div>
+
+<!-- ===== COMPARISON TABLE ===== -->
+<section id="comparison" class="comparison-section" aria-label="Bond Comparison Table">
+  <h2>Grinding Wheel Bond Comparison</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Bond Type</th>
+          <th>Typical Strengths</th>
+          <th>Typical Limitations</th>
+          <th>Common Applications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Resin Bond</strong></td>
+          <td>Excellent surface finish; good stock removal; self-sharpening; relatively forgiving; available in many hardness grades</td>
+          <td>Shorter wheel life than metal or vitrified; limited form retention; temperature sensitive; not ideal for heavy loads</td>
+          <td>Surface &amp; cylindrical grinding of tungsten carbide, ceramics, glass; tool grinding; sharpening; general-purpose superabrasive work</td>
+        </tr>
+        <tr>
+          <td><strong>Vitrified Bond</strong></td>
+          <td>Precise form holding; open structure for coolant; excellent geometry control; dressable with diamond tools; good wheel life</td>
+          <td>Lower toughness than resin; more brittle; requires careful handling; higher initial cost; less forgiving on interrupted cuts</td>
+          <td>Precision surface &amp; form grinding; crankshaft &amp; camshaft grinding; gear grinding; profile grinding; creep-feed grinding</td>
+        </tr>
+        <tr>
+          <td><strong>Metal Bond</strong></td>
+          <td>Exceptional wheel life; high bond strength; excellent form retention; handles heavy loads; good thermal conductivity</td>
+          <td>Poor surface finish without dressing; difficult to dress; slow cutting; high risk of workpiece burn if overloaded</td>
+          <td>Hard materials (ceramics, PCD, ferrite); lapidary; heavy-duty stock removal; glass grinding; optical lens grinding</td>
+        </tr>
+        <tr>
+          <td><strong>Electroplated</strong></td>
+          <td>Single-layer extreme sharpness; complex profiles; full diameter usable immediately; no dressing needed; cost-effective for complex shapes</td>
+          <td>Single-layer only (no redress); once worn, wheel is discarded; limited grit exposure control; not suitable for heavy stock removal</td>
+          <td>Profile &amp; form grinding; complex shapes; small-batch production; deburring; grinding of intricate contours; wood &amp; composite machining</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== FAQ / GEO SECTION ===== -->
+<section id="faq" class="geo-section" aria-label="Frequently Asked Questions">
+  <h2>Frequently Asked Questions About Grinding Wheel Bonds</h2>
+
+  <div class="faq-item open">
+    <h3 onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="true">What bond should I use for a diamond grinding wheel?</h3>
+    <div class="faq-answer">
+      <div class="direct-answer">Resin bond is the most common choice for diamond grinding wheels in general applications. Vitrified bond is preferred when precision form holding or dressability is required.</div>
+      <p>Diamond grinding wheels use bond types selected based on the workpiece and operation. For <strong>tungsten carbide and ceramic</strong> grinding, <a href="#comparison">resin bond</a> provides a good balance of material removal rate and surface finish. When grinding <strong>PCD or very hard ceramics</strong>, metal bond provides the toughness needed. For <strong>precision profile and form grinding</strong>, vitrified bond offers superior geometry control and can be dressed to restore cutting ability. <strong>Electroplated diamond wheels</strong> are ideal for complex profiles and single-pass operations where a fresh, sharp cutting surface is needed.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">What bond is best for CBN grinding?</h3>
+    <div class="faq-answer">
+      <div class="direct-answer">Resin bond is the most widely used for CBN grinding of hardened and tool steels. Vitrified bond is preferred for precision and form-holding requirements.</div>
+      <p>CBN (cubic boron nitride) grinding wheels are primarily used on ferrous materials — hardened steel, tool steel, bearing steel, and high-speed steel. <strong>Resin bond CBN wheels</strong> dominate for surface and cylindrical grinding due to their forgiving nature, good finish, and moderate cost. <strong>Vitrified bond CBN</strong> is the go-to for precision crankshaft, camshaft, and gear grinding where exact geometry must be maintained over long production runs. Metal bond CBN is rarely used except in specialized heavy-duty applications. Electroplated CBN is useful for form grinding and sharpening where a complex profile is needed.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">What is the difference between resin and vitrified bond?</h3>
+    <div class="faq-answer">
+      <div class="direct-answer">Resin bond is more forgiving and delivers better surface finish; vitrified bond offers superior form holding, dressability, and open structure for coolant flow.</div>
+      <p><strong>Resin bond</strong> uses phenolic or polyimide resins to hold abrasive grains. It is relatively soft, self-sharpening under load, and produces excellent surface finishes. However, it has limited form retention and degrades at elevated temperatures. <strong>Vitrified bond</strong> is a glass-like ceramic bond created by high-temperature sintering. It is rigid, precisely controllable in structure (porosity can be engineered), fully dressable with diamond tools, and holds form extremely well over long production runs. The trade-off is that vitrified wheels are more brittle and require more careful handling. For a detailed comparison, see <a href="#comparison">the bond comparison table</a> above.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">When should I use a metal bond grinding wheel?</h3>
+    <div class="faq-answer">
+      <div class="direct-answer">Use metal bond when grinding very hard materials (ceramics, PCD, ferrite, glass) that demand maximum bond strength and wheel life, or when complex shapes need extreme durability.</div>
+      <p>Metal bond (typically bronze, sintered iron, or copper-based alloys) provides the highest bond strength among all superabrasive bond types. This makes it essential for applications where the workpiece is extremely abrasive or hard — such as engineering ceramics, PCD compacts, ferrite cores, and optical glass. Metal bond wheels also have excellent thermal conductivity, which helps manage heat in dry or near-dry grinding. The downside is that they are slow-cutting, difficult to dress, and can cause workpiece burn if improperly applied. They are <strong>not</strong> the first choice for hardened steel grinding — resin or vitrified bond is usually more appropriate there.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">What is an electroplated grinding wheel?</h3>
+    <div class="faq-answer">
+      <div class="direct-answer">An electroplated grinding wheel has a single layer of abrasive bonded to a steel or aluminum core by nickel electroplating. It is sharp, precise, and ideal for complex profiles.</div>
+      <p>Electroplated wheels are manufactured by electrochemically depositing a nickel layer that encapsulates abrasive grains onto a precision-machined metal core. This produces a wheel with <strong>maximum grain exposure</strong> (extreme sharpness), the ability to form <strong>complex profiles</strong> that would be impossible with other bond types, and <strong>no dressing required</strong> — the wheel cuts at full capacity from the start. Because only a single layer of grit is present, once the grains are worn or pulled free, the wheel is typically discarded rather than redressed. Common uses include profile grinding, contour grinding, small-batch precision work, and grinding of materials where a fresh sharp cut is critical.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">Which bond gives better form holding?</h3>
+    <div class="faq-answer">
+      <div class="direct-answer">Vitrified bond provides the best form holding among all grinding wheel bond types, followed by metal bond.</div>
+      <p><strong>Vitrified bond</strong> is the gold standard for form holding in grinding. Its rigid, glass-like structure resists deformation under load and maintains the wheel's dressed profile over extended grinding operations. This is why vitrified bond is preferred for gear grinding, thread grinding, crankshaft grinding, and any application where the wheel's dressed geometry must transfer precisely to the workpiece. <strong>Metal bond</strong> also holds form well but is less commonly used for precision form applications. <strong>Resin bond</strong> has moderate form retention — sufficient for general-purpose work but not ideal for high-precision form transfer. <strong>Electroplated wheels</strong> hold their as-manufactured profile well but cannot be redressed to restore form once worn.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNICAL EDUCATION ===== -->
+<section id="learn" class="tech-section" aria-label="Technical Education">
+  <h2 style="text-align:center;font-size:1.4rem;color:var(--clr-primary);margin-bottom:1.25rem">Understanding Grinding Wheel Bonds</h2>
+
+  <h2>What Is a Grinding Wheel Bond?</h2>
+  <p>The bond is the material that holds abrasive grains together in a grinding wheel and attaches them to the wheel core. It is one of the most critical factors determining how a grinding wheel performs. While the abrasive grain (diamond, CBN, aluminum oxide, etc.) does the actual cutting, the bond controls grain retention, chip clearance, wheel wear rate, surface finish, and thermal behavior. Choosing the right bond family is essential to achieving the desired grinding results safely and economically.</p>
+
+  <h2>How Bond Affects Wheel Performance</h2>
+  <p>Bond characteristics influence virtually every aspect of the grinding process:</p>
+  <ul>
+    <li><strong>Grain retention:</strong> How firmly abrasive particles are held. Higher retention means longer wheel life but can increase heat and reduce sharpness.</li>
+    <li><strong>Self-sharpening:</strong> Softer bonds release dulled grains to expose fresh cutting edges. This is critical for thermal-sensitive workpieces.</li>
+    <li><strong>Porosity and chip clearance:</strong> Open structures allow coolant flow and chip evacuation, reducing loading and burn risk.</li>
+    <li><strong>Form stability:</strong> Rigid bonds maintain the dressed wheel profile under load, enabling precision geometry transfer.</li>
+    <li><strong>Dressability:</strong> Whether the wheel can be trued and dressed with conventional or diamond tools to restore geometry and sharpness.</li>
+    <li><strong>Thermal conductivity:</strong> Metal bonds conduct heat away from the grinding zone; resin bonds insulate, which can cause heat buildup.</li>
+  </ul>
+
+  <h2>Resin Bond vs Vitrified Bond</h2>
+  <p>Resin and vitrified are the two most common bond types for diamond and CBN superabrasive wheels. <strong>Resin bond</strong> (phenolic or polyimide) is softer and more elastic — it provides excellent surface finish and moderate stock removal while being forgiving on the workpiece. It self-sharpens under load but has limited form retention and degrades above ~200–300°C. <strong>Vitrified bond</strong> (glass-ceramic) is rigid and porous. It offers superior form holding, can be dressed with a diamond stick or rotary dresser, and its open structure permits high coolant flow rates. Vitrified bond is the preferred choice for precision production grinding where geometry control is paramount.</p>
+
+  <h2>Metal Bond vs Resin Bond</h2>
+  <p>Metal bonds (bronze, copper, sintered iron) provide the strongest grain retention and longest wheel life of any bond type. They excel when grinding extremely hard and abrasive materials like engineering ceramics, PCD, and ferrite. However, they cut slowly, are difficult to dress, and risk thermal damage to the workpiece if the grinding parameters are not carefully controlled. Resin bond, by contrast, cuts more freely, finishes better, and is far easier to dress — making it the default for most hardened steel and tool steel grinding. In summary: metal bond for hardest materials requiring maximum durability; resin bond for steels and softer materials requiring good finish.</p>
+
+  <h2>When Electroplated Wheels Are Useful</h2>
+  <p>Electroplated construction is unique in that a single layer of abrasive is nickel-plated onto a precision-machined metal core. This enables extremely complex wheel profiles that would be impractical or impossible to produce with sintered bond types. Electroplated wheels are also the sharpest cutting of any bond type, because nearly the full grain height is exposed. They require no dressing — the wheel is ready to cut at full capacity immediately. They are ideal for profile grinding, contour work, deburring, and small-batch production. The limitation is their single-layer construction: once the exposed grains wear, the wheel must be replaced.</p>
+
+  <h2>How Bond Selection Interacts With Diamond and CBN</h2>
+  <p>Diamond and CBN are the two superabrasive grain types, and each interacts differently with bond materials. Diamond is the hardest known material and excels at grinding non-ferrous hard materials (carbide, ceramic, glass, PCD). CBN has lower hardness than diamond but is thermally stable and chemically inert to ferrous metals at high temperature — making it the correct choice for hardened steel, tool steel, and bearing steel. The bond must be matched not only to the abrasive but to the complete application: resin bond works well with both diamond and CBN for general-purpose work; vitrified bond is preferred when precision form control is needed with either abrasive; metal bond is most commonly paired with diamond for grinding ceramics and PCD.</p>
+
+  <h2>Why Bond Selection Depends on the Complete Grinding Process</h2>
+  <p>No bond type is universally superior. The optimal bond depends on the intersection of multiple factors: workpiece material hardness and chemistry, the abrasive type and grit size, the grinding operation type (surface, cylindrical, profile, creep-feed), required surface finish and geometry tolerance, stock removal rate, wheel speed, coolant availability and type, and dressing method. Changing any one of these variables can shift the optimal bond choice. This is why bond selection should always be considered as part of the complete grinding process design — not as an isolated decision. The tool on this page provides a preliminary recommendation, but final validation should always consider your specific machine, workpiece, and process conditions. For application-specific guidance, contact <a href="https://sinogrind.com/">SINOGRIND technical support</a>.</p>
+</section>
+
+</div><!-- /container -->
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div>
+      <h4>SINOGRIND CO., LTD.</h4>
+      <p style="font-size:.85rem">Manufacturer of diamond and CBN grinding wheels — resin bond, vitrified bond, metal bond, and electroplated superabrasive tools.</p>
+    </div>
+    <div>
+      <h4>Products</h4>
+      <p><a href="https://sinogrind.com/grindingWheel/">Grinding Wheels</a></p>
+      <p><a href="https://sinogrind.com/grindingWheel/">Diamond Wheels</a></p>
+      <p><a href="https://sinogrind.com/grindingWheel/">CBN Wheels</a></p>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <p><a href="https://sinogrind.com/grindingWheel/bond-selection-tool/">Bond Selection Tool</a></p>
+      <p><a href="https://sinogrind.com/">Technical Support</a></p>
+    </div>
+    <p class="copy">&copy; 2026 SINOGRIND CO., LTD. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+(function(){
+'use strict';
+
+/* ===== BOND DATA ===== */
+const BONDS = {
+  resin: {
+    name: 'Resin Bond',
+    key: 'resin',
+    color: '#2980b9',
+    advantages: [
+      'Excellent surface finish capability',
+      'Good self-sharpening behavior',
+      'Forgiving on interrupted cuts',
+      'Wide range of hardness grades available',
+      'Moderate cost',
+      'Good stock removal rate'
+    ],
+    limitations: [
+      'Limited form retention compared to vitrified',
+      'Temperature sensitive (degrades above ~200–300°C)',
+      'Shorter wheel life than metal or vitrified',
+      'Not ideal for very high material removal rates',
+      'Cannot be dressed as precisely as vitrified'
+    ],
+    applications: [
+      'Surface and cylindrical grinding of tungsten carbide',
+      'Tool and cutter grinding',
+      'Ceramic component finishing',
+      'Sharpening operations',
+      'General-purpose superabrasive work'
+    ],
+    whenNotTo: [
+      'Very hard non-ferrous materials requiring maximum wheel life (use metal bond)',
+      'High-precision form holding over long production runs (use vitrified bond)',
+      'Dry grinding at very high removal rates (risk of thermal degradation)'
+    ],
+    typicalSpeed: '15–35 m/s',
+    coolantTip: 'Works well with flood coolant. Dry grinding is possible but limited by thermal sensitivity.'
+  },
+  vitrified: {
+    name: 'Vitrified Bond',
+    key: 'vitrified',
+    color: '#27ae60',
+    advantages: [
+      'Excellent form holding and geometry control',
+      'Fully dressable with diamond tools',
+      'Open porous structure allows coolant flow',
+      'Good wheel life',
+      'Precise structure engineering possible',
+      'Stable performance over long runs'
+    ],
+    limitations: [
+      'More brittle — requires careful handling',
+      'Less forgiving on interrupted cuts',
+      'Higher initial cost',
+      'Lower toughness than resin bond',
+      'Requires diamond dressing equipment'
+    ],
+    applications: [
+      'Precision form and profile grinding',
+      'Gear grinding and thread grinding',
+      'Crankshaft and camshaft grinding',
+      'Creep-feed grinding',
+      'Production cylindrical grinding'
+    ],
+    whenNotTo: [
+      'Maximum surface finish on soft materials (resin may be better)',
+      'Applications requiring maximum wheel toughness (resin bond)',
+      'Low-volume or hobby work where dressing equipment is unavailable'
+    ],
+    typicalSpeed: '20–60 m/s',
+    coolantTip: 'Excellent with high-pressure coolant due to open pore structure. Well-suited to creep-feed grinding with flood coolant.'
+  },
+  metal: {
+    name: 'Metal Bond',
+    key: 'metal',
+    color: '#e67e22',
+    advantages: [
+      'Maximum wheel life',
+      'Strongest grain retention',
+      'Excellent form retention under load',
+      'High thermal conductivity',
+      'Handles very hard and abrasive workpieces',
+      'Suitable for heavy-duty applications'
+    ],
+    limitations: [
+      'Slowest cutting action',
+      'Difficult and time-consuming to dress',
+      'Higher risk of workpiece burn',
+      'Lower surface finish quality without proper dressing',
+      'Higher initial cost per wheel'
+    ],
+    applications: [
+      'Grinding engineering ceramics',
+      'PCD and PCBN grinding',
+      'Ferrite core grinding',
+      'Glass and optical component grinding',
+      'Heavy-duty stock removal on very hard materials'
+    ],
+    whenNotTo: [
+      'General-purpose steel grinding (use resin or vitrified)',
+      'Applications requiring easy dressing',
+      'Surface finish-critical work without dressing capability',
+      'Heat-sensitive workpieces at high removal rates'
+    ],
+    typicalSpeed: '15–50 m/s',
+    coolantTip: 'Can be used wet or dry, but coolant strongly recommended for hard materials to prevent thermal damage.'
+  },
+  electroplated: {
+    name: 'Electroplated',
+    key: 'electroplated',
+    color: '#8e44ad',
+    advantages: [
+      'Extreme initial sharpness',
+      'Complex profile capability',
+      'No dressing required',
+      'Full diameter usable immediately',
+      'Cost-effective for complex shapes',
+      'Lowest grinding forces'
+    ],
+    limitations: [
+      'Single-layer only — cannot be redressed',
+      'Wheel is discarded once grains wear',
+      'Less grit exposure control',
+      'Not suited for heavy stock removal',
+      'Profile wear changes geometry over time'
+    ],
+    applications: [
+      'Profile and contour grinding',
+      'Complex shape grinding',
+      'Small-batch precision production',
+      'Deburring and edge grinding',
+      'Wood and composite machining'
+    ],
+    whenNotTo: [
+      'High-volume production requiring consistent geometry over time (use vitrified)',
+      'Heavy stock removal (metal or vitrified bond)',
+      'Applications requiring wheel redressing'
+    ],
+    typicalSpeed: '15–40 m/s',
+    coolantTip: 'Can be used wet or dry. Coolant helps extend wheel life and improve finish.'
+  }
+};
+
+/* ===== SCORING MODEL ===== */
+const CATEGORIES = [
+  { key: 'material_compat', label: 'Material Compatibility', desc: 'How well the bond handles the workpiece material' },
+  { key: 'abrasive_compat', label: 'Abrasive Compatibility', desc: 'Bond suitability for the chosen abrasive type' },
+  { key: 'operation_compat', label: 'Grinding Mode Fit', desc: 'How well the bond suits the grinding operation' },
+  { key: 'finish', label: 'Finish Requirement', desc: 'Ability to achieve the required surface finish' },
+  { key: 'form', label: 'Form Retention', desc: 'Ability to maintain dressed geometry under load' },
+  { key: 'productivity', label: 'Productivity', desc: 'Material removal rate and wheel life balance' },
+  { key: 'dressing', label: 'Dressing Considerations', desc: 'Ease of truing and dressing' }
+];
+
+/* Raw weights per category — sum = 100 */
+const WEIGHTS = { material_compat:22, abrasive_compat:18, operation_compat:16, finish:14, form:12, productivity:10, dressing:8 };
+
+/* Scoring matrix: 0–10 per bond per condition */
+function scoreMatrix(params){
+  const { abrasive, workpiece, operation, priority, characteristics, coolant, speed, dressing } = params;
+  const scores = { resin: {}, vitrified: {}, metal: {}, electroplated: {} };
+
+  /* --- Material compatibility --- */
+  const matScores = {
+    resin:    { tungsten_carbide:8, ceramic:7, pcbd:5, pcbn:4, hardened_steel:8, tool_steel:8, bearing_steel:7, glass:6, ferrite:4, other:5 },
+    vitrified:{ tungsten_carbide:8, ceramic:7, pcbd:5, pcbn:5, hardened_steel:9, tool_steel:9, bearing_steel:8, glass:5, ferrite:4, other:6 },
+    metal:    { tungsten_carbide:6, ceramic:9, pcbd:9, pcbn:8, hardened_steel:4, tool_steel:4, bearing_steel:3, glass:9, ferrite:9, other:7 },
+    electroplated:{ tungsten_carbide:6, ceramic:6, pcbd:7, pcbn:6, hardened_steel:5, tool_steel:5, bearing_steel:4, glass:6, ferrite:5, other:5 }
+  };
+  for(const b in scores) scores[b].material_compat = matScores[b][workpiece] || 5;
+
+  /* --- Abrasive compatibility --- */
+  const abrKey = abrasive === 'unsure' ? 'unsure' : abrasive;
+  const abrScores = {
+    resin:    { diamond:8, cbn:8, unsure:7 },
+    vitrified:{ diamond:8, cbn:9, unsure:7 },
+    metal:    { diamond:7, cbn:4, unsure:5 },
+    electroplated:{ diamond:7, cbn:6, unsure:6 }
+  };
+  for(const b in scores) scores[b].abrasive_compat = abrScores[b][abrKey] || 6;
+
+  /* If unsure abrasive, nudge material-based scores */
+  if(abrasive === 'unsure'){
+    /* Ferrous materials favor CBN — boost vitrified/resin */
+    const ferrous = ['hardened_steel','tool_steel','bearing_steel'];
+    if(ferrous.includes(workpiece)){
+      scores.vitrified.abrasive_compat = 9;
+      scores.resin.abrasive_compat = 9;
+      scores.metal.abrasive_compat = 3;
+      scores.electroplated.abrasive_compat = 5;
+    } else {
+      scores.metal.abrasive_compat = 8;
+      scores.resin.abrasive_compat = 7;
+      scores.vitrified.abrasive_compat = 6;
+      scores.electroplated.abrasive_compat = 6;
+    }
+  }
+
+  /* --- Operation compatibility --- */
+  const opScores = {
+    resin:    { surface:8, cylindrical:8, internal:7, tool_grinding:8, profile:6, creep_feed:5, sharpening:8 },
+    vitrified:{ surface:9, cylindrical:9, internal:7, tool_grinding:7, profile:9, creep_feed:9, sharpening:6 },
+    metal:    { surface:5, cylindrical:5, internal:6, tool_grinding:4, profile:5, creep_feed:6, sharpening:3 },
+    electroplated:{ surface:5, cylindrical:4, internal:5, tool_grinding:6, profile:9, creep_feed:3, sharpening:7 }
+  };
+  for(const b in scores) scores[b].operation_compat = opScores[b][operation] || 5;
+
+  /* --- Finish requirement --- */
+  const finScores = {
+    resin:    { fine_finish:9, general:8, aggressive:5, form_hold:6, economical:7 },
+    vitrified:{ fine_finish:7, general:8, aggressive:6, form_hold:9, economical:7 },
+    metal:    { fine_finish:3, general:4, aggressive:7, form_hold:7, economical:5 },
+    electroplated:{ fine_finish:6, general:6, aggressive:5, form_hold:7, economical:5 }
+  };
+  for(const b in scores) scores[b].finish = finScores[b][characteristics] || 5;
+
+  /* --- Form retention --- */
+  const formScores = {
+    resin:    { fine_finish:5, general:5, aggressive:4, form_hold:5, economical:5 },
+    vitrified:{ fine_finish:9, general:8, aggressive:7, form_hold:10, economical:8 },
+    metal:    { fine_finish:6, general:7, aggressive:8, form_hold:8, economical:7 },
+    electroplated:{ fine_finish:6, general:6, aggressive:4, form_hold:7, economical:5 }
+  };
+  for(const b in scores) scores[b].form = formScores[b][characteristics] || 5;
+
+  /* --- Productivity --- */
+  const prodScores = {
+    resin:    { finish:6, removal:7, life:5, form:5, balanced:7 },
+    vitrified:{ finish:7, removal:7, life:8, form:8, balanced:8 },
+    metal:    { finish:4, removal:6, life:9, form:7, balanced:5 },
+    electroplated:{ finish:5, removal:5, life:3, form:6, balanced:4 }
+  };
+  for(const b in scores) scores[b].productivity = prodScores[b][priority] || 5;
+
+  /* --- Dressing --- */
+  const dressScores = {
+    resin:    { none:6, easy_dress:7, truing:6, no_dress:5 },
+    vitrified:{ none:7, easy_dress:9, truing:9, no_dress:4 },
+    metal:    { none:5, easy_dress:2, truing:2, no_dress:7 },
+    electroplated:{ none:6, easy_dress:3, truing:3, no_dress:9 }
+  };
+  for(const b in scores) scores[b].dressing = dressScores[b][dressing] || 5;
+
+  /* Speed bonus/penalty */
+  if(speed){
+    const spd = parseFloat(speed);
+    if(!isNaN(spd)){
+      if(spd > 50){
+        scores.metal.material_compat = Math.min(10, scores.metal.material_compat + 1);
+        scores.resin.material_compat = Math.max(1, scores.resin.material_compat - 1);
+      }
+      if(spd > 60){
+        scores.vitrified.material_compat = Math.min(10, scores.vitrified.material_compat + 1);
+        scores.resin.material_compat = Math.max(1, scores.resin.material_compat - 2);
+      }
+    }
+  }
+
+  /* Coolant adjustments */
+  if(coolant === 'dry'){
+    scores.resin.finish = Math.max(1, scores.resin.finish - 1);
+    scores.vitrified.operation_compat = Math.min(10, scores.vitrified.operation_compat + 1);
+  }
+
+  return scores;
+}
+
+function computeWeightedScores(params){
+  const raw = scoreMatrix(params);
+  const results = {};
+  for(const bond in raw){
+    let total = 0;
+    for(const cat in WEIGHTS){
+      total += (raw[bond][cat] || 5) * WEIGHTS[cat] / 100;
+    }
+    results[bond] = { total: Math.round(total * 100) / 100, breakdown: raw[bond] };
+  }
+  return results;
+}
+
+function rankBonds(scored){
+  return Object.entries(scored)
+    .map(([k,v]) => ({ key: k, ...v }))
+    .sort((a,b) => b.total - a.total);
+}
+
+/* ===== UI HELPERS ===== */
+function $(sel){ return document.querySelector(sel); }
+function $$(sel){ return document.querySelectorAll(sel); }
+
+function toggleFaq(h3){
+  const item = h3.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  /* close all */
+  $$('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('h3').setAttribute('aria-expanded','false'); });
+  if(!isOpen){
+    item.classList.add('open');
+    h3.setAttribute('aria-expanded','true');
+  }
+}
+window.toggleFaq = toggleFaq;
+
+/* Keyboard for FAQ */
+$$('.faq-item h3').forEach(h3 => {
+  h3.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggleFaq(h3); }
+  });
+});
+
+/* ===== FORM SUBMISSION ===== */
+$('#bond-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const params = {
+    abrasive: document.querySelector('input[name="abrasive"]:checked').value,
+    workpiece: $('#workpiece').value,
+    operation: $('#operation').value,
+    priority: $('#priority').value,
+    characteristics: $('#characteristics').value,
+    coolant: $('#coolant').value,
+    speed: $('#speed').value,
+    dressing: $('#dressing').value
+  };
+  displayResults(params);
+  window.scrollTo({ top: document.getElementById('results-panel').offsetTop - 80, behavior: 'smooth' });
+});
+
+$('#bond-form').addEventListener('reset', function(){
+  setTimeout(() => {
+    $('#results-panel').classList.remove('visible');
+    $('#results-panel').innerHTML = '';
+  }, 50);
+});
+
+/* ===== DISPLAY RESULTS ===== */
+function displayResults(params){
+  const scored = computeWeightedScores(params);
+  const ranked = rankBonds(scored);
+  const first = ranked[0];
+  const second = ranked[1];
+  const panel = $('#results-panel');
+  const body = $('#results-body');
+
+  const firstBond = BONDS[first.key];
+  const secondBond = BONDS[second.key];
+
+  /* Build reason string */
+  const reason = buildReason(params, first.key);
+
+  let html = '';
+
+  /* Primary recommendation */
+  html += `<div class="result-card animate-in">`;
+  html += `<span class="bond-badge badge-primary">Recommended: ${firstBond.name}</span>`;
+  html += `<span class="bond-badge badge-secondary">Second Choice: ${secondBond.name}</span>`;
+  html += `<h2>${firstBond.name}</h2>`;
+  html += `<p style="margin:.75rem 0">${reason}</p>`;
+
+  /* Scoring breakdown */
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .5rem;color:var(--clr-primary)">Scoring Breakdown</h3>`;
+  html += `<div class="scoring-grid">`;
+  for(const cat of CATEGORIES){
+    const val = first.breakdown[cat.key] || 5;
+    const pct = val * 10;
+    const barColor = val >= 7 ? 'var(--clr-success)' : val >= 5 ? 'var(--clr-warn)' : 'var(--clr-accent)';
+    html += `<div class="scoring-item">
+      <div class="sc-label">${cat.label}</div>
+      <div class="sc-value" style="color:${barColor}">${val}/10</div>
+      <div class="sc-bar"><div class="sc-fill" style="width:${pct}%;background:${barColor}"></div></div>
+    </div>`;
+  }
+  html += `</div>`;
+  html += `<p style="font-size:.78rem;color:var(--clr-text-light);margin-top:.25rem">Weighted score: ${first.total.toFixed(2)} / 10 &nbsp;|&nbsp; ${secondBond.name}: ${second.total.toFixed(2)} / 10</p>`;
+
+  /* Advantages */
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .35rem;color:var(--clr-success)">Main Advantages</h3><ul>`;
+  firstBond.advantages.forEach(a => html += `<li>${a}</li>`);
+  html += `</ul>`;
+
+  /* Limitations */
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .35rem;color:var(--clr-accent)">Main Limitations</h3><ul>`;
+  firstBond.limitations.forEach(l => html += `<li>${l}</li>`);
+  html += `</ul>`;
+
+  /* Applications */
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .35rem;color:var(--clr-info)">Typical Application Examples</h3><ul>`;
+  firstBond.applications.forEach(a => html += `<li>${a}</li>`);
+  html += `</ul>`;
+
+  /* When NOT to choose */
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .35rem;color:var(--clr-warn)">When Not to Choose ${firstBond.name}</h3><ul>`;
+  firstBond.whenNotTo.forEach(w => html += `<li>${w}</li>`);
+  html += `</ul>`;
+
+  /* Speed & coolant tips */
+  html += `<p style="font-size:.85rem;margin-top:.75rem"><strong>Typical speed range:</strong> ${firstBond.typicalSpeed}<br>`;
+  html += `<strong>Coolant:</strong> ${firstBond.coolantTip}</p>`;
+  html += `</div>`;
+
+  /* Second choice card */
+  html += `<div class="result-card animate-in" style="border-left-color:var(--clr-info);animation-delay:.15s">`;
+  html += `<h2>Second Choice: ${secondBond.name}</h2>`;
+  html += `<p style="margin:.5rem 0">${buildReason(params, second.key)}</p>`;
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .35rem;color:var(--clr-success)">Advantages</h3><ul>`;
+  secondBond.advantages.slice(0,3).forEach(a => html += `<li>${a}</li>`);
+  html += `</ul>`;
+  html += `<h3 style="font-size:.95rem;margin:1rem 0 .35rem;color:var(--clr-accent)">Limitations</h3><ul>`;
+  secondBond.limitations.slice(0,3).forEach(l => html += `<li>${l}</li>`);
+  html += `</ul>`;
+  html += `</div>`;
+
+  /* Action buttons */
+  html += `<div class="btn-row">`;
+  html += `<button class="btn btn-secondary btn-sm" onclick="copyResults()">📋 Copy Results</button>`;
+  html += `<button class="btn btn-secondary btn-sm" onclick="window.print()">🖨 Print</button>`;
+  html += `<button class="btn btn-secondary btn-sm" onclick="shareResults()">🔗 Share</button>`;
+  html += `</div>`;
+
+  body.innerHTML = html;
+  panel.classList.add('visible');
+
+  /* Store for copy/share */
+  window._lastResults = { params, ranked, first, second };
+}
+
+function buildReason(params, bondKey){
+  const reasons = [];
+  const wk = params.workpiece;
+  const matNames = { tungsten_carbide:'tungsten carbide',ceramic:'ceramic',pcd:'PCD',pcbn:'PCBN',hardened_steel:'hardened steel',tool_steel:'tool steel',bearing_steel:'bearing steel',glass:'glass',ferrite:'ferrite',other:'the specified material' };
+  const opNames = { surface:'surface grinding',cylindrical:'cylindrical grinding',internal:'internal grinding',tool_grinding:'tool grinding',profile:'profile grinding',creep_feed:'creep-feed grinding',sharpening:'sharpening' };
+  const priNames = { finish:'surface finish',removal:'stock removal',life:'wheel life',form:'form holding',balanced:'balanced performance' };
+  const charNames = { fine_finish:'fine finish',general:'general purpose',aggressive:'aggressive removal',form_hold:'form holding',economical:'economy' };
+
+  if(bondKey === 'resin'){
+    reasons.push(`Resin bond is well-suited for grinding ${matNames[wk]} because it provides a good balance of cutting action and surface finish.`);
+    if(['surface','cylindrical','tool_grinding','sharpening'].includes(params.operation)){
+      reasons.push(`It performs well in ${opNames[params.operation]} operations where moderate form retention and good finish are needed.`);
+    }
+    if(params.priority === 'finish') reasons.push('Resin bond excels at producing fine surface finishes due to its self-sharpening characteristics.');
+    if(params.priority === 'removal') reasons.push('Resin bond provides good material removal rates with acceptable wheel life.');
+  } else if(bondKey === 'vitrified'){
+    reasons.push(`Vitrified bond is recommended for grinding ${matNames[wk]} when precision geometry control is required.`);
+    reasons.push('Its rigid structure maintains form under load and can be dressed with diamond tools to restore cutting ability.');
+    if(['profile','creep_feed','surface','cylindrical'].includes(params.operation)){
+      reasons.push(`This bond excels in ${opNames[params.operation]} where form holding and coolant access are important.`);
+    }
+    if(params.priority === 'form') reasons.push('Vitrified bond is the industry standard for precision form holding in grinding operations.');
+  } else if(bondKey === 'metal'){
+    reasons.push(`Metal bond is recommended for grinding ${matNames[wk]} because this material demands maximum bond strength and wheel life.`);
+    reasons.push('Metal bond provides the toughest grain retention needed for extremely hard and abrasive workpieces.');
+    if(['ceramic','pcd','ferrite','glass'].includes(wk)){
+      reasons.push('This workpiece material is among the most demanding — metal bond is typically required for economic grinding.');
+    }
+  } else if(bondKey === 'electroplated'){
+    reasons.push(`Electroplated construction is recommended for ${opNames[params.operation]} of ${matNames[wk]} when complex profiles or immediate sharpness are needed.`);
+    reasons.push('The single-layer abrasive provides maximum grain exposure and requires no dressing.');
+    if(params.operation === 'profile') reasons.push('Electroplated wheels excel at profile grinding where complex contours must be produced efficiently.');
+  }
+  return reasons.join(' ');
+}
+
+/* ===== COPY RESULTS ===== */
+window.copyResults = function(){
+  if(!window._lastResults) return;
+  const r = window._lastResults;
+  const first = BONDS[r.first.key];
+  const second = BONDS[r.second.key];
+  let text = `Grinding Wheel Bond Selection Result\n`;
+  text += `${'='.repeat(40)}\n`;
+  text += `Recommended: ${first.name} (score: ${r.first.total.toFixed(2)}/10)\n`;
+  text += `Second Choice: ${second.name} (score: ${r.second.total.toFixed(2)}/10)\n\n`;
+  text += `WORKPIECE: ${r.params.workpiece.replace(/_/g,' ')}\n`;
+  text += `OPERATION: ${r.params.operation.replace(/_/g,' ')}\n`;
+  text += `PRIORITY: ${r.params.priority.replace(/_/g,' ')}\n\n`;
+  text += `SCORING BREAKDOWN (${first.name}):\n`;
+  CATEGORIES.forEach(c => {
+    const v = r.first.breakdown[c.key] || 5;
+    text += `  ${c.label}: ${v}/10\n`;
+  });
+  text += `\nADVANTAGES:\n`;
+  first.advantages.forEach(a => text += `  - ${a}\n`);
+  text += `\nLIMITATIONS:\n`;
+  first.limitations.forEach(l => text += `  - ${l}\n`);
+  text += `\nAPPLICATIONS:\n`;
+  first.applications.forEach(a => text += `  - ${a}\n`);
+  text += `\n---\nDisclaimer: This is preliminary guidance. Validate against your specific process.\n`;
+  text += `Source: SINOGRIND Bond Selection Tool — sinogrind.com\n`;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('[onclick="copyResults()"]');
+    if(btn){ btn.textContent = '✅ Copied!'; setTimeout(() => btn.textContent = '📋 Copy Results', 2000); }
+  });
+};
+
+/* ===== SHARE ===== */
+window.shareResults = function(){
+  const url = window.location.href;
+  const text = 'Grinding Wheel Bond Selection Tool — compare resin, vitrified, metal, and electroplated bonds for diamond and CBN grinding wheels.';
+  if(navigator.share){
+    navigator.share({ title: document.title, text: text, url: url });
+  } else {
+    navigator.clipboard.writeText(url).then(() => {
+      const btn = document.querySelector('[onclick="shareResults()"]');
+      if(btn){ btn.textContent = '✅ Link Copied!'; setTimeout(() => btn.textContent = '🔗 Share', 2000); }
+    });
+  }
+};
+
+})();
+</script>
+</body>
+</html>
