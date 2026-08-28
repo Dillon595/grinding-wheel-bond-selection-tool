@@ -2,6 +2,12 @@
 
 A browser-based technical guide for selecting a preliminary **diamond or CBN grinding wheel bond** based on workpiece material, grinding operation, productivity requirements, surface finish, and other process conditions.
 
+## Live Demo
+
+[Launch the Grinding Wheel Specification Generator](https://sinogrind.com/tools/grinding-wheel-bond-selection-tool)
+
+No installation or build tools are required. The generator runs directly in a modern web browser.
+
 ## What Is Grinding Wheel Bond?
 
 The bond is the matrix or construction system that holds abrasive grains in the grinding wheel.
